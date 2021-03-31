@@ -1,0 +1,26 @@
+from flask import Flask
+from flask import send_from_directory
+import os 
+import time
+import board
+import adafruit_dht
+
+app = Flask(__name__)
+
+dhtDevice = adafruit_dht.DHT22(board.D18, use_pulseio=False)
+temperature_c = dhtDevice.temperature
+humidity = dhtDevice.humidity
+
+@app.route("/")
+def hello():
+  return "Home page"
+  
+@app.route("/temp")
+def temp_html():
+  html ="<h1>AMBIENT TEMP. AND HUMIDITY</h1>"+"\n"+"<ul>"
+  
+  html += "</ul> </body>
+  return html + "Temperature = " + str(temperature_c) + " C ... Humidity = " + str(humidity) + "%"
+  
+if __name__ == "__main__":
+  app.run()
