@@ -1,4 +1,4 @@
-# project
+# Ambient Temperature and Humidity 
 
 The motivation for this project is to provide a tool for 
 people in electronics manufacturing or any other field who 
