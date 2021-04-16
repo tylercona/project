@@ -15,9 +15,8 @@ while True:
             time.sleep(2)
             continue
         
-        else:
-            print(temperature, humidity)
-            time.sleep(5)
+        print(temperature, humidity)
+        time.sleep(5)
             
     except KeyboardInterrupt:
         exit()
