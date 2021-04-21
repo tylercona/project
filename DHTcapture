@@ -11,12 +11,17 @@ while True:
         temperature = dhtDevice.temperature
         humidity = dhtDevice.humidity
         
-        if humidity is None or temperature is None:
+        if temperature is None or humidity is None:
             time.sleep(2)
             continue
         
         print(temperature, humidity)
-        time.sleep(5)
-            
-    except KeyboardInterrupt:
+ 
+    except RuntimeError as error:
+        time.sleep(2.0)
+        continue
+    except Exception as error:
         exit()
+        raise error
+
+    time.sleep(10.0)
