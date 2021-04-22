@@ -11,21 +11,27 @@ dhtDevice = adafruit_dht.DHT22(board.D18, use_pulseio=False)
 
 @app.route("/")
 def index():
-
-    temperature, humidity = sensor()
-    print(temperature)
-    print(humidity)
+    try:
+        temperature = dhtDevice.temperature
+        humidity = dhtDevice.humidity
+        
+        if temperature is None or humidity is None:
+            time.sleep(1)
+ 
+    except RuntimeError as error:
+        temperature = 0
+        humidity = 0
 
     return render_template("layout.html", temperature=temperature, humidity=humidity)
 
-def sensor():
-    temperature = dhtDevice.temperature
-    humidity = dhtDevice.humidity
-
-    if humidity is None or temperature is None:
-        return temperature == 0, humidity == 0
-    else:
-        return temperature, humidity
+#def sensor():
+#    temperature = dhtDevice.temperature
+#    humidity = dhtDevice.humidity
+#
+#    if humidity is None or temperature is None:
+#        time.sleep(10)
+#    else:
+#        return temperature, humidity
     
 
 if __name__ == "__main__":
