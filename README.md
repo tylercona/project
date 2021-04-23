@@ -8,17 +8,21 @@ place of employment, it is important that we capture the
 ambient temperature and humidity of the room in which experiments
 are being conducted in, and where raw materials are stored in 
 because we want the materials to stay free of any moisture and 
-not absorb moisture from the air.
+be stored in rooms as dry as possible.
 
-In this project I will be using a DHT22 Temperature and Humidity
-Sensor Module and a Raspberry Pi 4. The purpose of the project is to 
+In this project, I will be using a DHT22 Temperature and Humidity
+Sensor Module and a Raspberry Pi 4 accompanied by Flask. The purpose of the project is to 
 use the Raspberry Pi to draw data from the sensor and display it
-clearly on a web server or external display connected to the 
-Raspberry Pi as well. A web server can be hosted using Flask and 
+clearly on a web server or an external display connected to the 
+Raspberry Pi. A web server will be hosted using Flask and 
 hosted on a local server for the user. Using Python and HTML
-a code can be scripted to provide instructions to the Raspberry 
+a code will be scripted to provide instructions to the Raspberry 
 Pi to collect data from the sensor module and display it on 
 a live updating web server. Using this product any person
 can be able to quickly receive an accurate reading of the 
 ambient temperature and humidity for experimental logging 
 or storage quality check. 
+
+I will begin with experimenting with a code to simply pull data
+from the DHT22 Sensor and printing the data on the terminal.
+<code>DHTcapture.py</code> is the code that tests the sensor.
