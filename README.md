@@ -25,6 +25,19 @@ or storage quality check.
 
 I will begin with experimenting with a code to simply pull data
 from the DHT22 Sensor and printing the data on the terminal.
-<br>
-<code>DHTcapture.py</code> is the code that tests the sensor. <br>
+
+<p><code>DHTcapture.py</code> is the code that tests the sensor. </p>
+
+<p>An initial issue that was found with the sensor module was it was almost impossible to
+  have a perfect reading each run. Errors such as "Checksum failed to validate. Try Again." 
+  and "A full buffer was not returned. Try again." To work around this, it was decided that 
+  if there was an error in the reading, the program will set the temperature and 
+  humidity values equal to 0. </p>
+  
+<p>Next, a Flask web server for this data will be created. Using <code>app.py</code>
+  this will initialize a web server to display the data pulled from the sensor. </p>
+  
+<p>Using HTML the template of the website will be created under <code>layout.html</code>
+  which will take the information pulled from the sensor in the Python code and insert the
+  temperature and humidity values into the website for the user's convenience.
 
