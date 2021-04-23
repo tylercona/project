@@ -25,4 +25,6 @@ or storage quality check.
 
 I will begin with experimenting with a code to simply pull data
 from the DHT22 Sensor and printing the data on the terminal.
-<code>DHTcapture.py</code> is the code that tests the sensor.
+<br>
+<code>DHTcapture.py</code> is the code that tests the sensor. <br>
+
