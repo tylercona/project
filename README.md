@@ -42,7 +42,8 @@ from the DHT22 Sensor and printing the data on the terminal.
   temperature and humidity values into the website for the user's convenience.
   
   Below it can be seen the webserver is working on Chromium on the Raspberry Pi at 127.0.0.1:5000 and 
-  by searching the IP address of the Pi on iOS with the correct port number the server can also be reached.
+  by searching the IP address of the Pi on an iOS device connected to the same 
+  Wi-Fi network the server can also be reached.
 
 ![Screen Shot 2021-04-23 at 12 16 34 PM](https://user-images.githubusercontent.com/78391004/115900273-c1646d80-a42d-11eb-9066-b42c330f26fa.png)
 
