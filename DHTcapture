@@ -18,9 +18,6 @@ while True:
         print(temperature, humidity)
  
     except RuntimeError as error:
-        temperature = 0
-        humidity = 0
-        print(temperature, humidity)
         time.sleep(2.0)
         continue
     except Exception as error:
