@@ -19,8 +19,8 @@ def index():
             time.sleep(1)
  
     except RuntimeError as error:
-        temperature = 0
-        humidity = 0
+        temperature = dhtDevice.temperature
+        humidity = dhtDevice.humidity
 
     return render_template("layout.html", temperature=temperature, humidity=humidity)
 
