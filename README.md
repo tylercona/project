@@ -43,6 +43,7 @@ from the DHT22 Sensor and printing the data on the terminal.
   and when there is another successful reading it will be displayed.</p>
   
 <p>Using HTML the template of the website will be created under <code>layout.html</code>
+
   which will take the information pulled from the sensor in the Python code and insert the
   temperature and humidity values into the website for the user's display.
   
@@ -51,4 +52,8 @@ from the DHT22 Sensor and printing the data on the terminal.
   Wi-Fi network the server can also be reached.
 
   
-![IMG_2672](https://user-images.githubusercontent.com/78391004/115900794-58c9c080-a42e-11eb-9684-aa5fb1a093e8.png)![Screen Shot 2021-04-23 at 12 16 34 PM](https://user-images.githubusercontent.com/78391004/115900273-c1646d80-a42d-11eb-9066-b42c330f26fa.png)
+![IMG_2714](https://user-images.githubusercontent.com/78391004/116745929-ce530500-a9c9-11eb-80e3-44caf34898a8.png)<img width="539" alt="Screen Shot 2021-04-30 at 3 30 42 PM" src="https://user-images.githubusercontent.com/78391004/116745995-e62a8900-a9c9-11eb-9a40-205d149f9a36.png">
+
+
+
+
