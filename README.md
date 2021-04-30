@@ -54,6 +54,8 @@ from the DHT22 Sensor and printing the data on the terminal.
   
 ![IMG_2714](https://user-images.githubusercontent.com/78391004/116745929-ce530500-a9c9-11eb-80e3-44caf34898a8.png)<img width="539" alt="Screen Shot 2021-04-30 at 3 30 42 PM" src="https://user-images.githubusercontent.com/78391004/116745995-e62a8900-a9c9-11eb-9a40-205d149f9a36.png">
 
+<p>Below is a .gif image showing the web server updating. 
 
 ![My Movie 1](https://user-images.githubusercontent.com/78391004/116749034-59ce9500-a9ce-11eb-846d-496fa44a633e.gif)
+<center>
 
