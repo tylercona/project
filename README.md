@@ -31,13 +31,16 @@ from the DHT22 Sensor and printing the data on the terminal.
 <p>An initial issue that was found with the sensor module was it was almost impossible to
   have a perfect reading each run. Errors such as "Checksum failed to validate. Try Again." 
   and "A full buffer was not returned. Try again." would consistently happen. To work around this, 
-  the code was manipulated to display the last successful reading until the next reading is available. </p>
+  the DHTcapture.py code was manipulated to ignore a failure in the reading, display nothing and continue 
+  looping until the next successful reading was taken, and then display that. </p>
   
 <p>Next, a Flask web server for this data will be created. Using <code>app.py</code>
   this will initialize a web server to display the data pulled from the sensor. The consistent failures
-  in the sensor modules reading created very big problems for the Flask web server, because if there
-  was a failure in reading the sensor then the server would crash. The solution to this problem is to 
-  display the last successful reading the sensor had on every refresh, until a new reading is taken.</p>
+  in the sensor module's reading created very big problems for the Flask web server, because if there
+  was a failure in reading the sensor, this would create an error in the temperature and humidity 
+  variables which would cause the server to crash. The solution to this problem is to 
+  display on the webpage the last successful reading the sensor had. The code will continue like normal 
+  and when there is another successful reading it will be displayed.</p>
   
 <p>Using HTML the template of the website will be created under <code>layout.html</code>
   which will take the information pulled from the sensor in the Python code and insert the
