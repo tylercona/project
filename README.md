@@ -35,24 +35,27 @@ from the DHT22 Sensor and printing the data on the terminal.
 <p>An initial issue that was found with the sensor module was it was almost impossible to
   have a perfect reading each run. Errors such as "Checksum failed to validate. Try Again." 
   and "A full buffer was not returned. Try again." would consistently happen. To work around this, 
-  the DHTcapture.py code was manipulated to ignore a failure in the reading, display nothing and continue 
-  looping until the next successful reading was taken, and then display that. </p>
+  the DHTcapture.py code was manipulated to sense there is a failure in the reading, display nothing and continue 
+  looping until the next successful reading was taken, and then display that. This created a smooth
+  flow of data in the command window and next a web server will be established to publish this 
+  data for a user.</p>
   
 <p>Next, a Flask web server for this data will be created. Using <code>app.py</code>
   this will initialize a web server to display the data pulled from the sensor. The consistent failures
   in the sensor module's reading created very big problems for the Flask web server, because if there
-  was a failure in reading the sensor, this would create an error in the temperature and humidity 
-  variables which would cause the server to crash. The solution to this problem is to 
-  display on the webpage the last successful reading the sensor had. The code will continue like normal 
-  and when there is another successful reading it will be displayed.</p>
+  was a failure in reading the sensor, Flask would not ignore the failure and would create an 
+  error in the temperature and humidity variables which would cause the server to crash. The 
+  solution to this problem is to change the DHT code to sense that there is an error, 
+  and display on the webpage the last successful reading the sensor had. 
+  The code will continue like normal and when there is another successful reading it will be displayed.</p>
   
 <p>Using HTML the template of the website will be created under <code>layout.html</code>
   which will take the information pulled from the sensor in the Python code and insert the
   temperature and humidity values into the website for the user's display.
   
-  Below it can be seen the webserver is working on Chromium on the Raspberry Pi at 127.0.0.1:5000 and 
-  by searching the IP address of the Pi on an iOS device connected to the same 
-  Wi-Fi network the server can also be reached.
+  Below one can see the webserver is working on Chromium on the Raspberry Pi at 127.0.0.1:5000 and 
+  the server can also be reached searching the IP address of the Pi on an iOS device connected to the same 
+  Wi-Fi network.
 
   
 ![IMG_2714](https://user-images.githubusercontent.com/78391004/116745929-ce530500-a9c9-11eb-80e3-44caf34898a8.png)<img width="539" alt="Screen Shot 2021-04-30 at 3 30 42 PM" src="https://user-images.githubusercontent.com/78391004/116745995-e62a8900-a9c9-11eb-9a40-205d149f9a36.png">
