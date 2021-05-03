@@ -1,28 +1,30 @@
 
 # Ambient Temperature and Humidity Observer
 
-The motivation for this project is to provide a tool for 
+<p>The motivation for this project is to provide a tool for 
 people in electronics manufacturing or any other field who 
 are interested in the ambient temperature and humidity of the 
 room in which raw materials are stored in. At my current 
-place of employment, it is important that we capture the 
-ambient temperature and humidity of the room in which experiments
-are being conducted in, and where raw materials are stored in 
-because we want the materials to stay free of any moisture and 
-be stored in rooms as dry as possible.
+place of employment where we manufacture electronics using organic 
+materials that are suscepible to moisture absorbtion it is important 
+that we capture the ambient temperature and humidity of the room 
+in which experiments are being conducted in, and where raw materials 
+are stored in. Ideally we want the materials to stay free of any moisture and 
+be stored in rooms as dry as possible.</p>
 
-In this project, I will be using a DHT22 Temperature and Humidity
-Sensor Module and a Raspberry Pi 4 accompanied by Flask. The purpose of the project is to 
+<p>In this project, I will be using a DHT22 Temperature and Humidity
+Sensor Module and a Raspberry Pi 4 accompanied by Flask to run a web 
+server. The purpose of the project is to 
 use the Raspberry Pi to draw data from the sensor and display it
 clearly on a web server or an external display connected to the 
 Raspberry Pi. A web server will be hosted using Flask and 
-hosted on a local server for the user. Using Python and HTML
+hosted on a local server for the user. Using Python and HTML,
 a code will be scripted to provide instructions to the Raspberry 
-Pi to collect data from the sensor module and display it on 
+Pi to collect data from the sensor module through GPIO and display it on 
 a live updating web server. Using this product any person
 can be able to quickly receive an accurate reading of the 
 ambient temperature and humidity for experimental logging 
-or storage quality check. 
+or storage quality check.</p> 
 
 <p>Below is an image of the Raspberry Pi connected to the DHT sensor module using a GPIO Extension Board and solderless breadboard.</p>
 
