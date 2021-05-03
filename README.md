@@ -24,6 +24,8 @@ can be able to quickly receive an accurate reading of the
 ambient temperature and humidity for experimental logging 
 or storage quality check. 
 
+<p>Below is an image of the Raspberry Pi connected to the DHT sensor module using a GPIO Extension Board and solderless breadboard.</p>
+
 ![IMG_2728](https://user-images.githubusercontent.com/78391004/116921922-a6121300-ac22-11eb-8b41-70ea01007a91.png)
 
 
