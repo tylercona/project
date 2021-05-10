@@ -70,6 +70,9 @@ from the DHT22 Sensor and printing the data on the terminal.
 <center>
 
 <p>At the end of the project, the problems that came with developing the web server have been overcome.
+  For this being my first IoT related project, I am proud of the progress made from starting with minimal knowledge of IoT 
+  at the beginning of the semester. This was a valuable hands-on learning experience that I wouldn't have gotten 
+  from other course, and it broadened my experiences to something I never had learned before. 
   In the future to make the project more robust, a higher quality temperature and humidity sensor module
   could be employed. Using a higher quality sensor could provide less reading failures, more 
   accurate readings and a quicker sampling rate than the DHT22 that was used.</p>
