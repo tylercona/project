@@ -69,6 +69,12 @@ from the DHT22 Sensor and printing the data on the terminal.
 ![My Movie 1](https://user-images.githubusercontent.com/78391004/116749034-59ce9500-a9ce-11eb-846d-496fa44a633e.gif)
 <center>
 
+<p>Click on the image below to be redirected to a YouTube video of a demonstration of the project running on Chromium on Raspberry Pi, and on a Google Chrome on a MacBook Pro.</p>
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/78391004/117704618-0bbd4c80-b199-11eb-8a61-37a123c3990e.png)](https://youtu.be/L2MpAoBKkuo)
+
+
+
 <p>At the end of the project, the problems that came with developing the web server have been overcome.
   For this being my first IoT related project, I am proud of the progress made from starting with minimal knowledge of IoT 
   at the beginning of the semester. This was a valuable hands-on learning experience that I wouldn't have gotten 
