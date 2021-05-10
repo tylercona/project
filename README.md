@@ -69,3 +69,7 @@ from the DHT22 Sensor and printing the data on the terminal.
 ![My Movie 1](https://user-images.githubusercontent.com/78391004/116749034-59ce9500-a9ce-11eb-846d-496fa44a633e.gif)
 <center>
 
+<p>At the end of the project, the problems that came with developing the web server have been overcome.
+  In the future to make the project more robust a higher quality temperature and humidity sensor module
+  could be employed. Using a higher quality sensor this could provide more less reading failures, more 
+  accurate readings and quicker sampling rate than the DHT22 that was used.</p>
