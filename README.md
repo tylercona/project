@@ -70,6 +70,6 @@ from the DHT22 Sensor and printing the data on the terminal.
 <center>
 
 <p>At the end of the project, the problems that came with developing the web server have been overcome.
-  In the future to make the project more robust a higher quality temperature and humidity sensor module
-  could be employed. Using a higher quality sensor this could provide more less reading failures, more 
-  accurate readings and quicker sampling rate than the DHT22 that was used.</p>
+  In the future to make the project more robust, a higher quality temperature and humidity sensor module
+  could be employed. Using a higher quality sensor could provide less reading failures, more 
+  accurate readings and a quicker sampling rate than the DHT22 that was used.</p>
