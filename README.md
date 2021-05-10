@@ -64,12 +64,12 @@ from the DHT22 Sensor and printing the data on the terminal.
   
 ![IMG_2714](https://user-images.githubusercontent.com/78391004/116745929-ce530500-a9c9-11eb-80e3-44caf34898a8.png)<img width="539" alt="Screen Shot 2021-04-30 at 3 30 42 PM" src="https://user-images.githubusercontent.com/78391004/116745995-e62a8900-a9c9-11eb-9a40-205d149f9a36.png">
 
-<p>Below is a .gif image showing the web server updating. 
+<p>Below is a .gif image showing the web server updating on Chromium. 
 
 ![My Movie 1](https://user-images.githubusercontent.com/78391004/116749034-59ce9500-a9ce-11eb-846d-496fa44a633e.gif)
 <center>
 
-<p>Click on the image below to be redirected to a YouTube video of a demonstration of the project running on Chromium on Raspberry Pi, and on a Google Chrome on a MacBook Pro.</p>
+<p>Click on the image below to be redirected to a YouTube video of a demonstration of the project running on Chromium on Raspberry Pi, and on Google Chrome on a MacBook Pro.</p>
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/78391004/117704618-0bbd4c80-b199-11eb-8a61-37a123c3990e.png)](https://youtu.be/L2MpAoBKkuo)
 
