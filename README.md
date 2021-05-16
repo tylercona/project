@@ -2,10 +2,10 @@
 # Ambient Temperature and Humidity Observer
 
 <p>The motivation for this project is to provide a tool for 
-people in electronics manufacturing or any other field who 
+people in manufacturing or any other field who 
 are interested in the ambient temperature and humidity of the 
 room in which raw materials are stored in. At my current 
-place of employment where we manufacture electronics using organic 
+place of employment we manufacture electronics using organic 
 materials that are suscepible to moisture absorbtion it is important 
 that we capture the ambient temperature and humidity of the room 
 in which experiments are being conducted in, and where raw materials 
@@ -16,11 +16,12 @@ be stored in rooms as dry as possible.</p>
 Sensor Module and a Raspberry Pi 4 accompanied by Flask to run a web 
 server. The purpose of the project is to 
 use the Raspberry Pi to draw data from the sensor and display it
-clearly on a web server or an external display connected to the 
-Raspberry Pi. A web server will be hosted using Flask and 
+clearly on a web server on an external display connected to the 
+Raspberry Pi or on any other device connected to the same Wi-Fi 
+network. A web server will be hosted using Flask and 
 hosted on a local server for the user. Using Python and HTML,
 a code will be scripted to provide instructions to the Raspberry 
-Pi to collect data from the sensor module through GPIO and display it on 
+Pi to collect data from the sensor module through GPIO pins and display it on 
 a live updating web server. Using this product any person
 can be able to quickly receive an accurate reading of the 
 ambient temperature and humidity for experimental logging 
@@ -57,7 +58,7 @@ from the DHT22 Sensor and printing the data on the terminal.
   which will take the information pulled from the sensor in the Python code and insert the
   temperature and humidity values into the website for the user's display.
   
-  Below one can see the webserver is working on Chromium on the Raspberry Pi at 127.0.0.1:5000 and 
+  Below one can see the web server is working on Chromium on the Raspberry Pi at 127.0.0.1:5000 and 
   the server can also be reached searching the IP address of the Pi on an iOS device connected to the same 
   Wi-Fi network.
 
